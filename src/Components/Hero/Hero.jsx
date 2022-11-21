@@ -4,7 +4,7 @@ import heroImg from "../../assets/hero-img.jpg";
 function Hero() {
   return (
     <section className="hero-section ">
-      <div className="flex flex-col justify-between md:flex-row gap-8 ">
+      <div className="flex flex-col justify-between md:flex-row items-center gap-8 ">
         <div className="space-y-2 ">
           <h1>
             Enjoy <span className="orange-color">home made meals</span> far away
@@ -18,7 +18,7 @@ function Hero() {
             <Buttons>Order Now</Buttons>
           </div>
         </div>
-        <figure className="w-full md:mx-0 mx-auto">
+        <figure className="w-full max-w-[320px] md:mx-0 mx-auto">
           <img src={heroImg} alt="" className="object-cover" />
         </figure>
       </div>
