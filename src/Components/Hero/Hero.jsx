@@ -18,7 +18,7 @@ function Hero() {
             <Buttons>Order Now</Buttons>
           </div>
         </div>
-        <figure className="w-72 md:mx-0 mx-auto">
+        <figure className="w-full md:mx-0 mx-auto">
           <img src={heroImg} alt="" className="object-cover" />
         </figure>
       </div>
