@@ -30,7 +30,7 @@ function ChooseContainer() {
   ));
 
   return (
-    <article className="max-w-6xl mx-auto">
+    <article className="max-w-6xl mx-auto px-8">
       <h1 className="orange-color text-center mb-5 font-bold text-3xl">
         Why choose us
       </h1>
