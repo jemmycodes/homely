@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.nav--text {
+  background: linear-gradient(
+    96.22deg,
+    #ff4d00 11.8%,
+    #2549d3 56.64%,
+    #ff5106 65.6%,
+    #fc5005 85.1%
+  );
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: "Oleo Script", cursive;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.orange-color {
+  color: #ff4d00;
+}
+
+@layer base {
+  section div h1 {
+    @apply leading-10 text-3xl md:text-left mx-auto text-center font-medium max-w-[345px];
+  }
+
+  section div p {
+    @apply text-center md:text-left max-w-[345px] mx-auto leading-7;
+  }
+
+  .btn-div {
+    @apply flex justify-center md:justify-start;
+  }
+
+  .hero-section {
+    @apply flex-col max-w-6xl mx-auto px-8 py-32 items-center space-y-8;
+  }
+
+  div hgroup h1 {
+    @apply font-bold;
+  }
+
+  div hgroup p {
+    /* @apply text-center; */
+  }
+}
