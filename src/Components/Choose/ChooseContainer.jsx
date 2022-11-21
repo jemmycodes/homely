@@ -30,13 +30,15 @@ function ChooseContainer() {
   ));
 
   return (
-    <article className="max-w-6xl mx-auto px-8">
-      <h1 className="orange-color text-center mb-5 font-bold text-3xl">
-        Why choose us
-      </h1>
-      <p className="text-center font-semibold mb-5">
-        This is what makes our product different
-      </p>
+    <article className="max-w-6xl mx-auto">
+      <div className="px-8">
+        <h1 className="orange-color text-center mb-5 font-bold text-3xl">
+          Why choose us
+        </h1>
+        <p className="text-center font-semibold mb-5 ">
+          This is what makes our product different
+        </p>
+      </div>
       <section className="bg-navBackground  justify-center md:justify-between items-center p-12 flex flex-col md:flex-row  gap-6">
         {chooseItem}
       </section>
