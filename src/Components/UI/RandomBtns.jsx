@@ -1,4 +1,4 @@
-function Buttons(props) {
+function RandomBtns(props) {
   return (
     <button className="px-5 bg-orange text-white py-2 rounded-lg">
       {props.children}
@@ -6,4 +6,4 @@ function Buttons(props) {
   );
 }
 
-export default Buttons;
+export default RandomBtns;

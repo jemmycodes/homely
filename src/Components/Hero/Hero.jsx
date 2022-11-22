@@ -1,4 +1,4 @@
-import Buttons from "../UI/Buttons";
+import Buttons from "../UI/RandomBtns";
 import heroImg from "../../assets/hero-img.jpg";
 
 function Hero() {
@@ -26,7 +26,7 @@ function Hero() {
         <div className="flex flex-col  gap-14 md:flex-row ">
           <hgroup>
             <h1>500K+</h1>
-            <p>Food Parters</p>
+            <p>Food Partners</p>
           </hgroup>
           <hgroup>
             <h1>1K+</h1>

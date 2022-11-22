@@ -5,18 +5,21 @@ import certificateSolid from "../../assets/certificate-solid.svg";
 
 const CHOOSE_DATA = [
   {
+    id: "01",
     img: barsImg,
     title: "Easy to Order",
     content:
       "Order food at a single click and select all food to order at any poin in time and at ease and comfort",
   },
   {
+    id: "02",
     img: delivery,
     title: "Fast Delivery",
     content:
       "Food delivery fast and reliable and get delivered at deliivery tinme and location any day any time",
   },
   {
+    id: "02",
     img: certificateSolid,
     title: "100% Quality",
     content:
@@ -26,7 +29,12 @@ const CHOOSE_DATA = [
 
 function ChooseContainer() {
   const chooseItem = CHOOSE_DATA.map((item) => (
-    <ChooseItem title={item.title} content={item.content} img={item.img} />
+    <ChooseItem
+      title={item.title}
+      content={item.content}
+      key={item.id}
+      img={item.img}
+    />
   ));
 
   return (
