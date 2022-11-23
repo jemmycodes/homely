@@ -1,5 +1,8 @@
 import Buttons from "../UI/RandomBtns";
 import heroImg from "../../assets/hero-img.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import placeholder from "../../assets/low-quality-img/low-yam.jpg";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 function Hero() {
   return (
@@ -19,7 +22,13 @@ function Hero() {
           </div>
         </div>
         <figure className="w-full max-w-[320px] md:mx-0 mx-auto">
-          <img src={heroImg} alt="" className="object-cover" />
+          <LazyLoadImage
+            placeholderSrc={placeholder}
+            src={heroImg}
+            alt="Local Nigerian Food"
+            effect="blur"
+          />
+          {/* <img src={heroImg} alt="" className="object-cover" /> */}
         </figure>
       </div>
       <div className="flex justify-center items-center ">

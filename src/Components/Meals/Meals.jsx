@@ -1,5 +1,6 @@
 import MealsItem from "./MealsItem";
 import yamFood from "../../assets/yam-food.svg";
+import placeholderImage from "../../assets/low-quality-img/low-yam.jpg";
 
 const FOODS_DATA = [
   {
@@ -7,40 +8,48 @@ const FOODS_DATA = [
     price: "500",
     food: "Yam and Egg Sauce",
     img: yamFood,
+    placeholder: placeholderImage,
+    alt: "Yam and Egg ",
   },
   {
     id: "food_02",
     price: "500",
     food: "Spag and Pepper Sauce",
     img: yamFood,
+    placeholder: placeholderImage,
+    alt: "Yam and Egg ",
   },
   {
     id: "food_03",
-
     price: "500",
     food: "Porridge Beans",
     img: yamFood,
+    placeholder: placeholderImage,
+    alt: "Yam and Egg ",
   },
   {
     id: "food_04",
-
     price: "500",
     food: "Yam and Egg Sauce",
     img: yamFood,
+    placeholder: placeholderImage,
+    alt: "Yam and Egg ",
   },
   {
     id: "food_05",
-
     price: "500",
     food: "Spag and Pepper Sauce",
     img: yamFood,
+    placeholder: placeholderImage,
+    alt: "Yam and Egg ",
   },
   {
     id: "food_06",
-
     price: "500",
     food: "Porridge Beans",
     img: yamFood,
+    placeholder: placeholderImage,
+    alt: "Yam and Egg ",
   },
 ];
 
@@ -50,7 +59,9 @@ function Meals() {
       food={meal.food}
       img={meal.img}
       price={meal.price}
+      alt={meal.alt}
       key={meal.id}
+      placeholderSrc={meal.placeholder}
     />
   ));
 
